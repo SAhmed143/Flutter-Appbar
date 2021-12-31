@@ -1,0 +1,43 @@
+ return DefaultTabController(
+      length: 6,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(widget.title),
+          bottom: TabBar(
+            indicatorWeight: 3.0,
+            indicatorColor: Colors.amber,
+            indicatorSize: TabBarIndicatorSize.tab,
+            tabs: [
+              Tab(
+                icon: Icon(Icons.home),
+              ),
+              Tab(
+                icon: Icon(Icons.video_settings_sharp),
+              ),
+              Tab(
+                icon: Icon(Icons.account_box),
+              ),
+              Tab(
+                icon: Icon(Icons.games),
+              ),
+              Tab(
+                icon: Icon(Icons.music_video),
+              ),
+              Tab(
+                icon: Icon(Icons.search),
+              ),
+            ],
+          ),
+        ),
+        body: Container(
+          child: TabBarView(
+            children: [
+              Container(color: Colors.white),
+              Container(color: Colors.brown),
+              Container(color: Colors.pink),
+              Container(color: Colors.yellow),
+              Container(color: Colors.green),
+              Container(color: Colors.black),
+            ],
+          ),
+        ),
